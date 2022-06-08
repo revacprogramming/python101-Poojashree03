@@ -8,4 +8,4 @@ if h>40:
      final1=40*rate+(h-40)*(rate*1.5)
 else:
      final1=h*rate
-print(final1)
+ print(final1)
