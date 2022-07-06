@@ -17,6 +17,7 @@ smallest = None
 
 score = input("Enter Score: ") 
  s =  float(score) 
+
  x = 'Error' 
  if s >= 0.9: 
          x = 'A' 
