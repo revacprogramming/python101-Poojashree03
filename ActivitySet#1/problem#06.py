@@ -30,4 +30,5 @@ score = input("Enter Score: ")
          x ='F' 
  else: 
          x ="Out of Range" 
+
  print (x)
