@@ -1,7 +1,7 @@
 #Loops & Iterators
 
-largest = None
-smallest = None
+largest= None
+smallest= None
 
 #while True:
   #num = input("Enter a number? ")
