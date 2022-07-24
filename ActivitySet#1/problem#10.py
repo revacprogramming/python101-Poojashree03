@@ -1,14 +1,22 @@
-#Dictionaries
+Program 10
+# Dictionaries 
+ name = input("Enter file:") 
+ if len(name) < 1: 
+     name = "mbox-short.txt" 
+ handle = open(name) 
+ d={} 
+ for line in handle: 
+     if line.startswith('From:'):continue 
+     if not line.startswith('From'):continue 
+     st=line.split() 
+     word=st[1] 
+     d[word]=d.get(word,0)+1 
+      
+ l=0 
+ s='' 
+ for a,b in d.items(): 
+     if b>l: 
+         l=b 
+         s=a 
+ print(s,l)
 
-#filename = "dataset/mbox-short.txt"
-filename = "dataset/mbox-short.txt"
-count=dict()
-name = input("Enter the file name:")
-handle = open(name,'r')
-for line in handle:
-    if not line.startswith('From '): 
-        continue
-    words=line.split()
-    words=words[1]
-    count[words]=count.get(words,0)+1
-print(words, count[words])
