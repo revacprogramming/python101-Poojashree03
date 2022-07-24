@@ -1,10 +1,7 @@
-# Strings
-
-#text = "X-DSPAM-Confidence:    0.8475"
-text= "X-DSPAM-Confidence:    0.8475" 
- startPos=text.find(':') 
- piece=text[startPos+1:] 
- end=float(piece) 
- print(end) 
-
-
+ Program 7 
+# Strings 
+  
+ text = "X-DSPAM-Confidence:    0.8475" 
+ index=text.find('0.8475') 
+ tt=float(text[index:]) 
+ print(tt)
