@@ -1,18 +1,11 @@
-#Lists
-
-#filename = "dataset/romeo.txt"
-filename = "dataset/romeo.txt"
-fname = input("Enter file name: ")
-fh = open(fname)
-lst = list()
-for line in fh:
-    line = line.rstrip()
-    if line == " " : continue
-    words = line.split()
-    for i in words:
-        if i in lst:
-            continue
-        else:
-            lst.append(i)
-lst.sort()
-print(lst)
+Program 9
+# Lists 
+ ll=[] 
+ fname = input("Enter file name: ") 
+ fh = open(fname) 
+ for line in fh: 
+     for tt in line.split(): 
+         if tt not in ll: 
+             ll.append(tt) 
+  
+ print(sorted(ll))
